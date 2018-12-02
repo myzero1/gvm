@@ -167,7 +167,7 @@ Sometimes especially during upgrades the state of gvm's files can get mixed up. 
 
 Replace GO_SOURCE_URL
 ===============
-### Replace googlesource by github
+Replace googlesource by github in ~/.gvm/scripts/install and ~/.gvm/scripts/listall
 ```cmd
 
 ```
