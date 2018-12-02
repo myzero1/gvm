@@ -168,7 +168,9 @@ Sometimes especially during upgrades the state of gvm's files can get mixed up. 
 Replace GO_SOURCE_URL
 ===============
 Replace googlesource by github in ~/.gvm/scripts/install and ~/.gvm/scripts/listall
-```cmd
+```shell
+sed -i "s/https\:\/\/go\.googlesource\.com\/go/https\:\/\/github\.com\/golang\/go/g"  ~/.gvm/scripts/listall
 
+sed -i "s/https\:\/\/go\.googlesource\.com\/go/https\:\/\/github\.com\/golang\/go/g"  ~/.gvm/scripts/install
 ```
 
