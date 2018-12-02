@@ -169,6 +169,8 @@ Replace GO_SOURCE_URL
 ===============
 Replace googlesource by github in ~/.gvm/scripts/install and ~/.gvm/scripts/listall
 ```shell
+grep -R  "go.googlesource.com" ~/.gvm
+
 sed -i "s/https\:\/\/go\.googlesource\.com\/go/https\:\/\/github\.com\/golang\/go/g"  ~/.gvm/scripts/listall
 
 sed -i "s/https\:\/\/go\.googlesource\.com\/go/https\:\/\/github\.com\/golang\/go/g"  ~/.gvm/scripts/install
