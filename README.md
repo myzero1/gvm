@@ -164,3 +164,11 @@ See examples/native for a working example.
 Troubleshooting
 ===============
 Sometimes especially during upgrades the state of gvm's files can get mixed up. This is mostly true for upgrade from older version than 0.0.8. Changes are slowing down and a LTR is imminent. But for now `rm -rf ~/.gvm` will always remove gvm. Stay tuned!
+
+Replace GO_SOURCE_URL
+===============
+###Replace googlesource by github
+```cmd
+
+```
+
