@@ -176,3 +176,17 @@ sed -i "s/https\:\/\/go\.googlesource\.com\/go/https\:\/\/github\.com\/golang\/g
 sed -i "s/https\:\/\/go\.googlesource\.com\/go/https\:\/\/github\.com\/golang\/go/g"  ~/.gvm/scripts/install
 ```
 
+Go dep in dockertool
+===============
+You show add "env DEPNOLOCK=1 " before dep command.
+```shell
+env DEPNOLOCK=1 dep init
+
+env DEPNOLOCK=1 dep status
+
+env DEPNOLOCK=1 dep ensure
+
+env DEPNOLOCK=1 dep version
+
+env DEPNOLOCK=1 dep check
+```
